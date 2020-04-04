@@ -1,0 +1,58 @@
+[
+  {
+    "ID Województwa": "1",
+    "Województwo": "dolnośląskie",
+    "Powierzchnia [km²]": 19947,
+    "Ludność": 2901225,
+    "Gęstość zaludnienia [osób/km²]": 145.45
+  },
+  {
+    "ID Województwa": "2",
+    "Województwo": "kujawsko-pomorskie",
+    "Powierzchnia [km²]": 17972,
+    "Ludność": 2077775,
+    "Gęstość zaludnienia [osób/km²]": 115.62
+  },
+  {
+    "ID Województwa": "3",
+    "Województwo": "lubelskie",
+    "Powierzchnia [km²]": 25122,
+    "Ludność": 2117629,
+    "Gęstość zaludnienia [osób/km²]": 84.29
+  },
+  {
+    "ID Województwa": "4",
+    "Województwo": "lubuskie",
+    "Powierzchnia [km²]": 13988,
+    "Ludność": 1014548,
+    "Gęstość zaludnienia [osób/km²]": 72.53
+  },
+  {
+    "ID Województwa": "5",
+    "Województwo": "łódzkie",
+    "Powierzchnia [km²]": 18219,
+    "Ludność": 2466322,
+    "Gęstość zaludnienia [osób/km²]": 135.37
+  },
+  {
+    "ID Województwa": "6",
+    "Województwo": "małopolskie",
+    "Powierzchnia [km²]": 15183,
+    "Ludność": 3400577,
+    "Gęstość zaludnienia [osób/km²]": 223.98
+  },
+  {
+    "ID Województwa": "7",
+    "Województwo": "mazowieckie",
+    "Powierzchnia [km²]": 35558,
+    "Ludność": 5403412,
+    "Gęstość zaludnienia [osób/km²]": 151.96
+  },
+  {
+    "ID Województwa": "8",
+    "Województwo": "opolskie",
+    "Powierzchnia [km²]": 9412,
+    "Ludność": 986506,
+    "Gęstość zaludnienia [osób/km²]": 104.82
+  }
+]

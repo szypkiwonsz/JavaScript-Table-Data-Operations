@@ -1,7 +1,6 @@
 let myBooks = [];
-$.getJSON( "data.json", function( data){
+$.getJSON( "data.json", function(data){
     myBooks = data;
-    console.log(myBooks)
 });
 
 function CreateTableFromJSON() {

@@ -1,41 +1,57 @@
-let myBooks = [];
-$.getJSON( "data.json", function(data){
-    myBooks = data;
+let sortDirection = false;
+let myData = [];
+$.getJSON("data.json", function (data) {
+    myData = data;
 });
 
-function CreateTableFromJSON() {
-    // Wyciąga dane dla nagłówka tabeli HTML.
-    let col = [];
-    for (let i = 0; i < myBooks.length; i++) {
-        for (let key in myBooks[i]) {
-            if (col.indexOf(key) === -1) {
-                col.push(key);
+window.onload = () => {
+    loadTableData(myData);
+};
+
+function reset(){
+    $.getJSON("data.json", function (data) {
+        myData = data;
+        loadTableData(myData)
+    });
+}
+
+function loadTableData(myData) {
+    const tableBody = document.getElementById('tableData');
+    let dataHTML = '';
+    for (let element of myData) {
+        dataHTML += `<tr><td>${element.id}</td><td>${element.voivodeship}</td><td>${element.area}</
+                td><td>${element.population}</td><td>${element.population_density}</td></tr>`;
+    }
+
+    tableBody.innerHTML = dataHTML;
+}
+
+function sortColumn(columnName) {
+    const dataType = typeof myData[0][columnName];
+    sortDirection = !sortDirection;
+
+    switch(dataType){
+        case 'number':
+            sortNumberColumn(sortDirection, columnName);
+            break;
+    }
+    loadTableData(myData);
+}
+
+function sortNumberColumn(sort, columnName) {
+    myData = myData.sort((p1, p2) => {
+        return sort ? p1[columnName] - p2[columnName] : p2[columnName] - p1[columnName]
+    });
+}
+
+function filterColumn(columnName, value) {
+    for (let i = 0; i < myData.length; i++) {
+            // console.log(myData.length)
+            if (myData[i][columnName] > value) {
+                myData[i][columnName] = myData[i][columnName]
+            } else {
+                myData.splice(i, 1);
             }
         }
-    }
-
-    // Tworzy dynamiczną tabelę.
-    let table = document.createElement("table");
-
-    // Tworzy wiersz nagłówka tabeli HTML używając wyciągniętych powyżej nagłówków.
-    let tr = table.insertRow(-1);               // Wiersz tabeli.
-    for (let i = 0; i < col.length; i++) {
-        let th = document.createElement("th");  // Nagłówek tabeli.
-        th.innerHTML = col[i];
-        tr.appendChild(th);
-    }
-
-    // Dodaje dane json'owe do tabeli jako wiersze.
-    for (let i = 0; i < myBooks.length; i++) {
-        tr = table.insertRow(-1);
-        for (let j = 0; j < col.length; j++) {
-            let tabCell = tr.insertCell(-1);
-            tabCell.innerHTML = myBooks[i][col[j]];
-        }
-    }
-
-    // Ostatecznie dodaje nowo stworzoną tabele z danymi json'owymi do kontenera.
-    let divContainer = document.getElementById("showData");
-    divContainer.innerHTML = "";
-    divContainer.appendChild(table);
+    loadTableData(myData);
 }

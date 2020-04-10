@@ -1,58 +1,58 @@
 [
   {
-    "ID Województwa": "1",
-    "Województwo": "dolnośląskie",
-    "Powierzchnia [km²]": 19947,
-    "Ludność": 2901225,
-    "Gęstość zaludnienia [osób/km²]": 145.45
+    "id": 1,
+    "voivodeship": "dolnośląskie",
+    "area": 19947,
+    "population": 2901225,
+    "population_density": 145.45
   },
   {
-    "ID Województwa": "2",
-    "Województwo": "kujawsko-pomorskie",
-    "Powierzchnia [km²]": 17972,
-    "Ludność": 2077775,
-    "Gęstość zaludnienia [osób/km²]": 115.62
+    "id": 2,
+    "voivodeship": "kujawsko-pomorskie",
+    "area": 17972,
+    "population": 2077775,
+    "population_density": 115.62
   },
   {
-    "ID Województwa": "3",
-    "Województwo": "lubelskie",
-    "Powierzchnia [km²]": 25122,
-    "Ludność": 2117629,
-    "Gęstość zaludnienia [osób/km²]": 84.29
+    "id": 3,
+    "voivodeship": "lubelskie",
+    "area": 25122,
+    "population": 2117629,
+    "population_density": 84.29
   },
   {
-    "ID Województwa": "4",
-    "Województwo": "lubuskie",
-    "Powierzchnia [km²]": 13988,
-    "Ludność": 1014548,
-    "Gęstość zaludnienia [osób/km²]": 72.53
+    "id": 4,
+    "voivodeship": "lubuskie",
+    "area": 13988,
+    "population": 1014548,
+    "population_density": 72.53
   },
   {
-    "ID Województwa": "5",
-    "Województwo": "łódzkie",
-    "Powierzchnia [km²]": 18219,
-    "Ludność": 2466322,
-    "Gęstość zaludnienia [osób/km²]": 135.37
+    "id": 5,
+    "voivodeship": "łódzkie",
+    "area": 18219,
+    "population": 2466322,
+    "population_density": 135.37
   },
   {
-    "ID Województwa": "6",
-    "Województwo": "małopolskie",
-    "Powierzchnia [km²]": 15183,
-    "Ludność": 3400577,
-    "Gęstość zaludnienia [osób/km²]": 223.98
+    "id": 6,
+    "voivodeship": "małopolskie",
+    "area": 15183,
+    "population": 3400577,
+    "population_density": 223.98
   },
   {
-    "ID Województwa": "7",
-    "Województwo": "mazowieckie",
-    "Powierzchnia [km²]": 35558,
-    "Ludność": 5403412,
-    "Gęstość zaludnienia [osób/km²]": 151.96
+    "id": 7,
+    "voivodeship": "mazowieckie",
+    "area": 35558,
+    "population": 5403412,
+    "population_density": 151.96
   },
   {
-    "ID Województwa": "8",
-    "Województwo": "opolskie",
-    "Powierzchnia [km²]": 9412,
-    "Ludność": 986506,
-    "Gęstość zaludnienia [osób/km²]": 104.82
+    "id": 8,
+    "voivodeship": "opolskie",
+    "area": 9412,
+    "population": 986506,
+    "population_density": 104.82
   }
 ]

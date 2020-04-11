@@ -8,6 +8,16 @@ window.onload = () => {
     loadTableData(myData);
 };
 
+function filterColumn(columnName, value) {
+    for (let i = 0; i < myData.length; i++) {
+        while (myData[i][columnName] < value) {
+
+            myData.splice(i, 1);
+            loadTableData(myData);
+        }
+    }
+}
+
 function reset(){
     $.getJSON("data.json", function (data) {
         myData = data;
@@ -42,16 +52,4 @@ function sortNumberColumn(sort, columnName) {
     myData = myData.sort((p1, p2) => {
         return sort ? p1[columnName] - p2[columnName] : p2[columnName] - p1[columnName]
     });
-}
-
-function filterColumn(columnName, value) {
-    for (let i = 0; i < myData.length; i++) {
-            // console.log(myData.length)
-            if (myData[i][columnName] > value) {
-                myData[i][columnName] = myData[i][columnName]
-            } else {
-                myData.splice(i, 1);
-            }
-        }
-    loadTableData(myData);
 }

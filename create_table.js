@@ -13,19 +13,17 @@ window.onload = () => {
 function filterColumn(columnName, value) {
     if (clicked === false) {
         if (value === 1000000) {
-            document.getElementById('firstFilter').setAttribute("class", "filter1");
-            document.getElementById('population').setAttribute("class", "filter1");
+            document.getElementById('firstFilter').setAttribute("class", "btn btn-info");
         } else if (value === 2500000) {
-            document.getElementById('secondFilter').setAttribute("class", "filter2");
-            document.getElementById('population').setAttribute("class", "filter2");
+            document.getElementById('secondFilter').setAttribute("class", "btn btn-warning");
         } else {
-            document.getElementById('thirdFilter').setAttribute("class", "filter3");
+            document.getElementById('thirdFilter').setAttribute("class", "btn btn-danger");
         }
         clicked = true;
     } else {
-        document.getElementById('firstFilter').setAttribute("class", "xd");
-        document.getElementById('secondFilter').setAttribute("class", "xd");
-        document.getElementById('thirdFilter').setAttribute("class", "xd");
+        document.getElementById('firstFilter').setAttribute("class", "btn");
+        document.getElementById('secondFilter').setAttribute("class", "btn");
+        document.getElementById('thirdFilter').setAttribute("class", "btn");
         clicked = false;
     }
 

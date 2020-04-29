@@ -17,10 +17,22 @@
         <th onclick="sortColumn('area')">Powierzchnia [km²]</th>
         <th onclick="sortColumn('population')">Ludność</th>
         <th onclick="sortColumn('population_density')">Gęstość zaludnienia [osób/km²]</th>
-<!--        <th><button onclick="reset()" type="button">Wyłącz filtry</button></th>-->
-        <th><button class="btn" onclick="filterColumn('population', 1000000);reset()" type="button" id="firstFilter">Ludność > 1.000.000</button></th>
-        <th><button class="btn" onclick="filterColumn('population', 2500000);reset()" type="button" id="secondFilter">Ludność > 2.500.000</button></th>
-        <th><button class="btn" onclick="filterColumn('population', 5000000);reset();" type="button" id="thirdFilter">Ludność > 5.000.000</button></th>
+        <!--        <th><button onclick="reset()" type="button">Wyłącz filtry</button></th>-->
+        <th>
+            <button class="btn" onclick="filterColumn('population', 1000000);reset()" type="button" id="firstFilter">
+                Ludność > 1.000.000
+            </button>
+        </th>
+        <th>
+            <button class="btn" onclick="filterColumn('population', 2500000);reset()" type="button" id="secondFilter">
+                Ludność > 2.500.000
+            </button>
+        </th>
+        <th>
+            <button class="btn" onclick="filterColumn('population', 5000000);reset();" type="button" id="thirdFilter">
+                Ludność > 5.000.000
+            </button>
+        </th>
     </tr>
     </thead>
     <tbody id="tableData"></tbody>

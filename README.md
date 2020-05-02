@@ -37,6 +37,7 @@ Uruchom plik index.html w swojej przeglądarce.
 ```
 
 Jeśli wykonałeś wszystko zgodnie z instrukcją, na stronie powinna zostać wygenerowana tablica, a wszystkie możliwości opisane w instrukcji powinny działać.
+---
 
 ## Stworzony za pomocą
 

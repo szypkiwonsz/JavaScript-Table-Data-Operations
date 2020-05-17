@@ -42,10 +42,10 @@ Jeśli wykonałeś wszystko zgodnie z instrukcją, na stronie powinna zostać wy
 
 ## Stworzony za pomocą
 
-* [JavaScript] - język programowania
-* [HTML5] - język do tworzenia stron interetowych
-* [CSS] - język do opisu formy prezentacji stron WWW
-* [Bootstrap] - biblioteka CSS
+* JavaScript - język programowania
+* HTML5 - język do tworzenia stron interetowych
+* CSS - język do opisu formy prezentacji stron WWW
+* Bootstrap - biblioteka CSS
 
 ## Autor
 

@@ -45,7 +45,7 @@ Jeśli wykonałeś wszystko zgodnie z instrukcją, na stronie powinna zostać wy
 * JavaScript - język programowania
 * HTML5 - język do tworzenia stron interetowych
 * CSS - język do opisu formy prezentacji stron WWW
-* Bootstrap - biblioteka CSS
+* [Bootstrap](https://getbootstrap.com/) - biblioteka CSS
 
 ## Autor
 

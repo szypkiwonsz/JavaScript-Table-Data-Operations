@@ -15,9 +15,11 @@ function filterColumn(columnName, value) {
         if (value === 1000000) {
             document.getElementById('firstFilter').setAttribute("class", "btn btn-info");
         } else if (value === 2500000) {
-            document.getElementById('secondFilter').setAttribute("class", "btn btn-warning");
+            document.getElementById('secondFilter').setAttribute("class",
+                "btn btn-warning");
         } else {
-            document.getElementById('thirdFilter').setAttribute("class", "btn btn-danger");
+            document.getElementById('thirdFilter').setAttribute("class",
+                "btn btn-danger");
         }
         clicked = true;
     } else {
@@ -66,8 +68,11 @@ function loadTableData(myData) {
 
     const tableFooter = document.getElementById('tableFooter');
     let dataFooter = '';
-    dataFooter += `<tr><td>Suma</td><td></td><td>${sumArea}</td><td id="population">${sumPopulation}</td><td>${sumDenisty}</td>`;
-    dataFooter += `<tr><td>Średnia</td><td></td><td>${(sumArea / elements).toFixed(2)}</td><td id="population">${(sumPopulation / elements).toFixed(2)}</td><td>${(sumDenisty / elements).toFixed(2)}</td>`;
+    dataFooter += `<tr><td>Suma</td><td></td><td>${sumArea}</td><td id="population">${sumPopulation}</td>
+    <td>${sumDenisty}</td>`;
+    dataFooter += `<tr><td>Średnia</td><td></td><td>${(sumArea / elements).toFixed(2)}</td>
+    <td id="population">${(sumPopulation / elements).toFixed(2)}</td>
+    <td>${(sumDenisty / elements).toFixed(2)}</td>`;
     tableFooter.innerHTML = dataFooter;
 
 }

@@ -1,56 +1,56 @@
 # JavaScript-Table-Data-Operations
 
-Strona zawierająca dynamicznie wygenerowaną tabele z danymi opisanymi w formacie JSON. Tabela pozwala na sortowanie liczb malejąco oraz rosnąco, a także filtrowanie jednej z kolumn. Wyświetla sumę oraz średnią z poszczególnych kolumn. 
+A page containing dynamically generated table with data described in JSON format. The table allows you to sort numbers in descending and ascending order as well as filter one of the columns. It also display the sum and average of individual columns.
 
-## Od czego zacząć
+## Getting Started
 
-Ta instrukcja pokaże Ci jak uruchomić projekt na swoim systemie oraz jakich zasad powinienieś się trzymać.
+These instructions will get you a copy of the project up and running on your local machine.
 
-### Jak posortować dane?
+### How to Sort Data
 
-Wszystkie kolumny z liczbami posiadają możliwość sortowania wystarczy, że klikniesz nagłówek z nazwą kolumny np. ID.
-
-```
-Jedno kliknięcie ---> sortowanie danych malejąco.
-```
-```
-Drugie kliknięcie ---> sortowanie daynch rosnąco.
-```
----
-
-### Jak filtrować dane?
-
-Kolumna ludność posiada możliwość filtrowania danych z trzema możliwościami. Po prostu kliknij filtr jaki chcesz zastosować, aby wyświetlić tylko te dane z aktywnym filtrem.
+All columns with numbers have the ability to sort, just click the header with the name of the column, e.g. ID.
 
 ```
-Np. ludność > 1.000.000 ---> wyświetla dane, gdzie ludność jest większa niż milion osób.
+First click ---> sorting data in descending order.
+```
+```
+Second click ---> sorting data in ascending order.
 ```
 ---
 
-### Jak uruchomić skrypt
+### How to Filter Data
+
+The population column has the ability to filter data with three options. Just click the filter you want to apply to display only this data with the active filter.
 
 ```
-Pobierz projekt.
+E.g. population > 1.000.000 ---> displays data where the population is greater than a million people.
+```
+---
+
+### Running
+
+```
+Download project
 ```
 ```
-Uruchom plik index.html w swojej przeglądarce.
+Run file "index.html" in your browser
 ```
 
-Jeśli wykonałeś wszystko zgodnie z instrukcją, na stronie powinna zostać wygenerowana tablica, a wszystkie możliwości opisane w instrukcji powinny działać.
+If you have done everything in accordance with the instructions, a table should be generated on the page, and all the possibilities described in the manual should work.
 
 ---
 
-## Stworzony za pomocą
+## Built With
 
-* JavaScript - język programowania
-* HTML5 - język do tworzenia stron interetowych
-* CSS - język do opisu formy prezentacji stron WWW
-* [Bootstrap](https://getbootstrap.com/) - biblioteka CSS
+* JavaScript - The programming language used
+* HTML5 - The language for creating websites
+* CSS - The language to describe the form of presenting websites
+* [Bootstrap](https://getbootstrap.com/) - CSS library
 
-## Autor
+## Author
 
 * **Jan Kacper Sawicki** - [szypkiwonsz](https://github.com/szypkiwonsz)
 
-## Informacje dodatkowe
+## Acknowledgments
 
-* Projekt został zrobiony jako zadanie na studia.
+* The script was written as a study assignment.
